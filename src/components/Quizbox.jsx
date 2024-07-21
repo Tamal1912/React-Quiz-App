@@ -20,7 +20,7 @@ let handleNextClick=()=>{
   setCurrentQs(currentQs+1);
   }else{
     setCurrentQs(currentQs);
-    alert("No Next Questions Left");
+    alert("Please Click Reset Option\n No Next Questions Left");
    
   }
 
@@ -40,10 +40,12 @@ let handleOptionClicked=(isCorrect)=>{
     alert("Noh, Wrong Answer, Check Next Question")
 
   }
-
-  
-
 }
+
+let handleResetBtn=()=>{
+  setCurrentQs(0);
+  setScore(0);
+} 
 
   return (
     <>
@@ -61,7 +63,7 @@ let handleOptionClicked=(isCorrect)=>{
          
          
         <Result activeQs={currentQs} totalScore={score}/>
-        <Userbuttons activeQs={currentQs} handleNext={handleNextClick}/>
+        <Userbuttons activeQs={currentQs} handleReset={handleResetBtn} handleNext={handleNextClick}/>
       </div>
     </>
   );
