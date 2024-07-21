@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding:0;
+  margin:0;
+}
+html{
+  padding:0;
+  margin:0;
+ 
+ }
+
+.body{
+  background:linear-gradient(135deg,rgb(0, 115, 237),rgb(3, 213, 66));
+  
+}
+
+.box{
+  width: 80%;
+  height:100vh;
+}
+
+
+
+.quiz-box{
+  
+  margin: 0 0 0 10%;
+  width: 80%;
+  height:60vh;
+  
+}
+
+.buttons{
+  display: flex;
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  left:50%;
+  
+}
+
+.quiz-details{
+  background:linear-gradient(5deg,rgb(0, 115, 237),rgb(3, 213, 66));
+  margin-left: 22%;
+ 
+}
+
+.list-items{
+  padding: 2px 0 20px 10px;
+  cursor: pointer;
+}
