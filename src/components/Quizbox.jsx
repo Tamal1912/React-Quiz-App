@@ -11,20 +11,27 @@ const [score,setScore]=useState(0);
 
 
 let handleNextClick=()=>{
- 
+  
+  if(questions.length < currentQs+1){
+    setCurrentQs(0);
+    setScore(0);
+  }
   if(questions.length > currentQs+1){
   setCurrentQs(currentQs+1);
   }else{
     setCurrentQs(currentQs);
     alert("No Next Questions Left");
+   
   }
-}
+
+
+  }
 
 let handleOptionClicked=(isCorrect)=>{
  
   
   if(isCorrect){
-    
+
     if((currentQs) < questions.length){
     alert("Score Increased , Keep Going")
     setScore(score+1); 
