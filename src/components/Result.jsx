@@ -5,7 +5,7 @@ const Result = ({activeQs,totalScore}) => {
   return (
     <>
     <div 
-    className="quiz-details mb-6 lg:w-48 lg:h-40 lg:mb-2 md:w-44 md:h-36 md:mt-3 sm:w-28 
+    className="quiz-details mb-3 lg:w-52 lg:h-36 lg:mb-2 md:w-44 md:h-36 md:mt-3 sm:w-28 
        sm:h-36 sm:mb-4 content-center font-sans mt-14 border-none
       rounded-xl  text-white text-center ">
           <h1 className='lg:text-2xl md:text-xl sm:text-sm '>
@@ -16,7 +16,7 @@ const Result = ({activeQs,totalScore}) => {
           <h2>Results</h2>
 
           <h2>Score is : {totalScore}</h2>
-          
+
            <h3>
             {totalScore} out of {questions.length} correct - {((totalScore)/questions.length)*100}%
            </h3>
